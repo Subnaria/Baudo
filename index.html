@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#170A36">
+  <script>
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    if (performance.getEntriesByType("navigation")[0]?.type === "reload") {
+      window.addEventListener("DOMContentLoaded", () => window.scrollTo(0, 0), { once: true });
+    }
+  </script>
+  <title>Baudo</title>
+  <meta name="description" content="Portfolio de Baudo : jeux vidéo indépendants, création de contenu et projets gaming.">
+  <meta name="author" content="cscpacman">
+  <link rel="canonical" href="https://baudo.fr/">
+  <link rel="icon" href="img/Basic/Branding/baudo-site.webp">
+
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Baudo">
+  <meta property="og:title" content="Baudo - Site officiel">
+  <meta property="og:description" content="Jeux indépendants, création de contenu et projets gaming par Baudo.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://baudo.fr/">
+  <meta property="og:image" content="https://baudo.fr/img/Basic/Banner/Banner-Baudo.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Front-end/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Baudo",
+    "url": "https://baudo.fr/",
+    "jobTitle": "Développeur de jeux vidéo",
+    "sameAs": [
+      "https://www.youtube.com/@Dev_Baudo",
+      "https://www.twitch.tv/devbaudo",
+      "https://www.tiktok.com/@dev_baudo",
+      "https://www.instagram.com/dev_baudo/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="icon-platform-web" viewBox="0 0 24 24"><path d="M6 3h12v2H6zm0 16h12v2H6zM4 5h2v2H4zm5 0h2v2H9zm0 12h2v2H9zm4 0h2v2h-2zM7 7h2v10H7zm8 0h2v10h-2zm-2-2h2v2h-2zm7 0h-2v2h2zM2 7h2v10H2zm20 0h-2v10h2zM4 17h2v2H4zm16 0h-2v2h2z"/><path d="M3 11h18v2H3z"/></symbol>
+    <symbol id="icon-click" viewBox="0 0 24 24"><path d="M10 6H8v12h2v2H6V4h4v2Zm2 12h-2v-2h2v2Zm6-2h-6v-2h4v-2h2v4Zm-2-4h-2v-2h2v2Zm-2-2h-2V8h2v2Zm-2-2h-2V6h2v2Z"/></symbol>
+    <symbol id="icon-click-hover" viewBox="0 0 24 24"><path fill="#FFFFFF" d="M12 9h1v1h-1zM12 10h2v1h-2zM12 11h3v1h-3zM12 12h4v1h-4zM12 13h4v1h-4zM12 14h3v1h-3zM12 15h1v1h-1z"/><path fill="currentColor" d="M11 3h1v2h-1zM8 4h1v1H8zM9 5h1v1H9zM14 4h1v1h-1zM13 5h1v1h-1zM8 9h1v1H8zM9 8h1v1H9zM11 7h1v11h-1zM12 8h1v1h-1zM13 9h1v1h-1zM14 10h1v1h-1zM15 11h1v1h-1zM16 12h1v1h-1zM16 13h2v1h-2zM15 14h3v1h-3zM13 15h2v1h-2zM12 16h2v1h-2zM11 17h2v1h-2z"/></symbol>
+  </svg>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a href="#home" class="logo" aria-label="BAUDO — Accueil">BAUDO</a>
+
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links" id="navLinks">
+          <li><a class="nav-link active" href="#home">Accueil</a></li>
+          <li><a class="nav-link" href="#social">Reseaux</a></li>
+          <li><a class="nav-link" href="#latest-video">Ma derniere video !</a></li>
+          <li><a class="nav-link" href="#dev-play">DEV &amp; PLAY !</a></li>
+          <li><a class="nav-link" href="#games">Jeux</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Ouvrir le menu" aria-controls="navLinks" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-title">
+            JUSTE UN GARS QUI JOUE<br>
+            <span>A CREER DES JEUX VIDEO</span>
+          </h1>
+          <div class="hero-actions">
+            <a href="#games" class="btn btn-solid">Découvrir mes jeux</a>
+            <a href="https://www.youtube.com/@Dev_Baudo" target="_blank" rel="noopener noreferrer" class="btn btn-line">YouTube <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="icon-youtube-cursor" aria-hidden="true"><path d="M10 6H8v12h2v2H6V4h4v2Zm2 12h-2v-2h2v2Zm6-2h-6v-2h4v-2h2v4Zm-2-4h-2v-2h2v2Zm-2-2h-2V8h2v2Zm-2-2h-2V6h2v2Z"/></svg></a>
+          </div>
+          <dl class="stats" aria-label="Quelques chiffres">
+            <div class="stat"><dt>Abonnés</dt><dd id="subCount">...</dd></div>
+            <div class="stat"><dt>Vues chaîne YouTube</dt><dd id="channelViews">...</dd></div>
+          </dl>
+        </div>
+        <aside class="hero-profile" aria-label="Photo de profil de Baudo">
+          <div class="profile-orbit"><img src="img/Basic/Branding/baudo-pdp.webp" alt="Photo de profil de Baudo" width="192" height="192"></div>
+          <p class="profile-tag"><strong>BAUDO</strong></p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="social" class="section social-section" aria-labelledby="social-title">
+      <div class="wrap">
+        <div class="section-heading social-heading">
+          <div>
+            <p class="eyebrow">01 / BAUDO VERSE</p>
+            <h2 class="title" id="social-title">Mes<br>Reseaux !</h2>
+          </div>
+        </div>
+
+        <div class="social-grid social-bento">
+          <a href="https://www.youtube.com/@Dev_Baudo/videos" target="_blank" rel="noopener noreferrer" class="bento-card bento-youtube" aria-label="Voir les derniers devlogs de Baudo sur YouTube">
+            <div class="bento-youtube-art">
+              <img class="bg-image" src="img/Basic/Banner/Hero-YouTube-Baudo.png" alt="Capture de la chaîne YouTube de Baudo">
+              <span class="bento-art-kicker">BAUDO / DEVLOGS</span>
+              <span class="click-overlay-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><use href="#icon-click"></use></svg></span>
+            </div>
+            <div class="bento-card-copy">
+
+              <h3>Les Devlogs &amp; Projets</h3>
+              <span class="bento-card-action">Voir le dernier devlog <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-click"></use></svg></span>
+            </div>
+          </a>
+
+          <a href="https://www.twitch.tv/devbaudo" target="_blank" rel="noopener noreferrer" class="bento-card bento-twitch" aria-label="Retrouver Baudo sur Twitch">
+            <div class="bento-twitch-network-icon"><img src="img/Basic/Icon/icon-twitch.png" alt="" width="40" height="40"></div>
+            <div class="bento-twitch-content">
+              <h3>Les Lives</h3>
+              <span class="bento-live-status" id="twitchLiveStatus" data-live-status="offline"><svg class="bento-live-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 20H8v-2h8v2Zm-8-2H4v-2h4v2Zm12 0h-4v-2h4v2ZM4 16H2v-2h2v2Zm10-6h-2v2h2v-2h2v4h-2v2h-4v-2H8v-4h2V8h4v2Zm8 6h-2v-2h2v2ZM2 14H0v-4h2v4Zm22 0h-2v-4h2v4ZM4 10H2V8h2v2Zm18 0h-2V8h2v2ZM8 8H4V6h4v2Zm12 0h-4V6h4v2Zm-4-2H8V4h8v2Z"/></svg><span>Reste à l'affût !</span></span>
+              <span class="bento-card-action">Passer sur Twitch <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-click"></use></svg></span>
+            </div>
+          </a>
+
+          <a href="https://discord.com/invite/TxJNqvAV5e" target="_blank" rel="noopener noreferrer" class="bento-card bento-discord" aria-label="Rejoindre le Baudo Crew sur Discord">
+            <div class="bento-discord-network-icon"><img src="img/Basic/Icon/icon-discord.png" alt="" width="40" height="40"></div>
+            <div class="bento-discord-content">
+              <h3>BAUDO BOYZ</h3>
+              <p>Rejoins le serveur pour échanger avec la commu, suivre l'avancée des projets et participer aux décisions.</p>
+              <span class="bento-discord-activity"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 22H0v-4h2v4Zm14 0h-2v-4h2v4Zm8 0h-2v-4h2v4ZM4 18H2v-2h2v2Zm10 0h-2v-2h2v2Zm8 0h-2v-2h2v2Zm-10-2H4v-2h8v2Zm8 0h-4v-2h4v2Zm-9-4H5v-2h6v2Zm8 0h-4v-2h4v2ZM5 10H3V4h2v6Zm8 0h-2V4h2v6Zm8 0h-2V4h2v6ZM11 4H5V2h6v2Zm8 0h-4V2h4v2Z"/></svg><span>+4600 membres ! Pourquoi ne pas les rejoindre ?</span></span>
+              <span class="bento-card-action">Rejoindre le serveur <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-click"></use></svg></span>
+            </div>
+          </a>
+
+          <div class="bento-mini-grid" aria-label="Autres réseaux de Baudo">
+            <a href="https://www.tiktok.com/@dev_baudo" target="_blank" rel="noopener noreferrer" class="bento-card bento-mini bento-tiktok">
+              <span class="bento-mini-preview"><img class="avatar" src="img/Basic/Branding/baudo-pdp.webp" alt="" width="64" height="64" loading="lazy"><span class="network-badge"><img src="img/Basic/Icon/icon-tiktok.png" alt="" width="16" height="16" loading="lazy"></span></span>
+              <span><strong>Shorts &amp; extraits</strong><small>TikTok · @dev_baudo</small></span>
+              <svg class="bento-mini-arrow" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-click"></use></svg>
+            </a>
+            <a href="https://www.instagram.com/dev_baudo/" target="_blank" rel="noopener noreferrer" class="bento-card bento-mini bento-instagram">
+              <span class="bento-mini-preview"><img class="avatar" src="img/Basic/Branding/baudo-pdp.webp" alt="" width="64" height="64" loading="lazy"><span class="network-badge"><img src="img/Basic/Icon/icon-instagram.png" alt="" width="16" height="16" loading="lazy"></span></span>
+              <span><strong>Shorts &amp; extraits</strong><small>Instagram · @dev_baudo</small></span>
+              <svg class="bento-mini-arrow" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-click"></use></svg>
+            </a>
+            <a href="https://www.youtube.com/@Zbaudo" target="_blank" rel="noopener noreferrer" class="bento-card bento-mini bento-secondary">
+              <span class="bento-mini-preview"><img class="avatar" src="img/Basic/Branding/zbaudo-pdp.jpg" alt="" width="64" height="64" loading="lazy"><span class="network-badge"><img src="img/Basic/Icon/icon-youtube.png" alt="" width="16" height="16" loading="lazy"></span></span>
+              <span><strong>Chaîne secondaire</strong><small>YouTube · Zbaudo</small></span>
+              <svg class="bento-mini-arrow" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-click"></use></svg>
+            </a>
+            <a href="https://www.youtube.com/@Baudollywood" target="_blank" rel="noopener noreferrer" class="bento-card bento-mini bento-archive">
+              <span class="bento-mini-preview"><img class="avatar" src="img/Basic/Branding/baudollywood-pdp.jpg" alt="" width="64" height="64" loading="lazy"><span class="network-badge"><img src="img/Basic/Icon/icon-youtube.png" alt="" width="16" height="16" loading="lazy"></span></span>
+              <span><strong>Les rediffusions</strong><small>YouTube · Baudollywood</small></span>
+              <svg class="bento-mini-arrow" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-click"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="latest-video" class="section latest-video-section alt" aria-labelledby="latest-video-title">
+      <div class="wrap latest-video-layout">
+        <div class="section-heading">
+          <p class="eyebrow">02 / VIDÉO</p>
+          <h2 class="title" id="latest-video-title">Ma derniere video !</h2>
+        </div>
+        <div class="latest-video-player" id="latestVideoPlayer" role="group" aria-label="Emplacement du lecteur vidéo personnalisé">
+          <div class="latest-video-screen">
+            <div class="latest-video-placeholder" role="status" aria-label="Chargement du lecteur vidéo">
+              <img class="latest-video-logo" src="img/Basic/Branding/baudo-site.webp" alt="" width="72" height="72">
+            </div>
+          </div>
+          <div class="latest-video-controls">
+            <div class="latest-video-title-group">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="icon-title-arrow" aria-hidden="true"><path d="M4 11v2h16v-2zm12 2v2h2v-2zm-2 2v2h2v-2zm-2 2v2h2v-2zm4-6V9h2v2z"/><path d="M14 15V7h2v8zm-2 2V5h2v12z"/></svg>
+              <span class="latest-video-title">La dernière vidéo s’affichera ici.</span>
+            </div>
+            <div class="latest-video-meta-group">
+              <time class="latest-video-time"></time>
+              <a class="latest-video-link" href="https://www.youtube.com/@Dev_Baudo" target="_blank" rel="noopener noreferrer">YouTube <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="icon-youtube-cursor" aria-hidden="true"><path d="M10 6H8v12h2v2H6V4h4v2Zm2 12h-2v-2h2v2Zm6-2h-6v-2h4v-2h2v4Zm-2-4h-2v-2h2v2Zm-2-2h-2V8h2v2Zm-2-2h-2V6h2v2Z"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section id="dev-play" class="dev-play-section" aria-labelledby="dev-play-title">
+    <div class="wrap">
+      <div class="dp-layout">
+        <div class="dp-content">
+          <div class="section-heading dev-play-header">
+            <p class="eyebrow">03 / DEV &amp; PLAY</p>
+            <div class="dev-play-title-wrapper">
+              <span class="dev-play-accent-line" aria-hidden="true"></span>
+              <h2 class="dev-play-title" id="dev-play-title">
+                <span class="font-daydream">DEV</span>
+                <span class="font-press-start">&amp;</span>
+                <span class="font-daydream">PLAY !</span>
+              </h2>
+            </div>
+          </div>
+    
+          <div class="dp-hero">
+            <div class="dp-intro">
+              <p class="dp-lead">Ma plateforme pour apprendre à créer des jeux vidéo de A à Z.</p>
+              <a class="dp-cta" href="https://devandplay.fr/" target="_blank" rel="noopener noreferrer">
+                <span>Découvrir le site</span>
+                <b class="click-icon" aria-hidden="true"><svg class="icon-click-base" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-click"></use></svg></b>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="dp-logo-3d" id="dpLogo3d">
+          <div class="dp-float">
+            <img class="dp-logo" src="https://devandplay.fr/favicon.svg" alt="Logo Dev &amp; Play" width="240" height="240" loading="lazy" decoding="async">
+          </div>
+          <span class="dp-shadow" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section id="games" class="section games-section" aria-labelledby="games-title">
+      <div class="wrap">
+        <div class="section-heading games-heading">
+          <div>
+            <p class="eyebrow">04 / CRÉATIONS</p>
+            <h2 class="title" id="games-title">Mes jeux</h2>
+          </div>
+          <a href="https://dev-baudo.itch.io/" target="_blank" rel="noopener noreferrer" class="text-link">Tous les projets sur itch.io <span class="click-icon text-link-icon" aria-hidden="true"><svg class="icon-click-base" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-click"></use></svg></span></a>
+        </div>
+        <div class="games" id="gamesShowcase">
+          <article class="game-detail" id="gameDetail" aria-live="polite" aria-labelledby="gameDetailTitle">
+            <div class="game-detail-visual">
+              <img id="gameDetailImage" src="img/Basic/Banner/Banner-Lethal-room.webp" alt="Bannière de Lethal Room" width="1280" height="720">
+              <span id="gameDetailNumber" class="game-detail-number">01 / 08</span>
+              <span class="game-visual-stamp badge-text" id="gameBadgeText" aria-hidden="true">Une pépite !</span>
+            </div>
+            <div class="game-detail-copy">
+              <p id="gameDetailCategory" class="game-detail-category">SURVIE / MOBILE</p>
+              <h3 id="gameDetailTitle">Lethal Room</h3>
+              <p id="gameDetailDescription" class="game-detail-description">DAX transforme chaque pièce en piège mortel. Repère le danger, esquive au bon moment et tente de grimper au classement.</p>
+              <div class="game-platform-area">
+                <span class="game-platform-label">DISPONIBLE SUR</span>
+                <div id="gamePlatforms" class="game-platforms" aria-label="Plateformes disponibles">
+                
+                  <span class="platform-badge"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 8h3v2h-3zm3-2h4v2h-4zm4 2h2v3h-2zm-2 3h2v4h-2zm2 4h2v5h-2zm-4 5h4v2h-4zm-3-2h3v2h-3zm-4 2h4v2H7zm-2-2h2v2H5zm-2-8h2v8H3zm2-2h2v2H5zm2-2h4v2H7zm5-3h2v2h-2zm2-2h2v2h-2z"/></svg><span>iOS</span></span>
+                  <span class="platform-badge"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12h2v6H2zm18 0h2v6h-2zM4 10h2v2H4zm4 2h2v4H8zm6 0h2v4h-2zm6-2h-2v2h2zM6 8h2v2H6zM4 6h2v2H4zM2 4h2v2H2zm16 4h-2v2h2zm2-2h-2v2h2zm2-2h-2v2h2zM8 6h8v2H8zM2 18h20v2H2z"/></svg><span>Android</span></span>
+                </div>
+                <div id="gameRating" class="game-rating" hidden>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24" shape-rendering="crispEdges" aria-hidden="true"><path d="M5 20h3v2H3v-6h2v4Zm16 2h-5v-2h3v-4h2v6Zm-11-2H8v-2h2v2Zm6 0h-2v-2h2v2Zm-2-2h-4v-2h4v2Zm-7-2H5v-3h2v3Zm12 0h-2v-3h2v3ZM5 13H3v-2h2v2Zm16 0h-2v-2h2v2ZM9 9H3v2H1V7h8v2Zm14 2h-2V9h-6V7h8v4ZM11 7H9V3h2v4Zm4 0h-2V3h2v4Zm-2-4h-2V1h2v2Z"/></svg>
+                  <span id="gameRatingText"></span>
+                </div>
+              </div>
+              <a id="gameDetailLink" class="game-detail-link" href="https://play.google.com/store/apps/details?id=com.baudo.lethalroom" target="_blank" rel="noopener noreferrer"><span id="gameDetailAction">Telecharger le jeu</span><b class="click-icon" aria-hidden="true"><svg class="icon-click-base" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-click"></use></svg></b></a>
+              <a id="gameVideoLink" class="game-video-link" href="https://youtube.com/" target="_blank" rel="noopener noreferrer"><span>Regarder la vidéo liée à ce jeu !</span></a>
+            </div>
+          </article>
+
+          <div class="game-gallery">
+            <div class="game-gallery-heading">
+              <div><p class="eyebrow">CHOISIS TON JEU !</p><h3>L'encyclopedie de <span>BAUDO</span></h3></div>
+              <div class="game-gallery-controls" aria-label="Navigation dans les jeux">
+                <button id="gameGalleryPrevious" class="custom-cursor" type="button" aria-label="Jeu précédent"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 13v-2h2v2H8Zm2-2V9h2v2h-2Zm0 4v-2h2v2h-2Zm2-6V7h2v2h-2Zm0 8v-2h2v2h-2Zm2-10V5h2v2h-2Zm0 12v-2h2v2h-2Z"/></svg></button>
+                <button id="gameGalleryNext" class="custom-cursor" type="button" aria-label="Jeu suivant"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 13v-2h-2v2h2Zm-2-2V9h-2v2h2Zm0 4v-2h-2v2h2Zm-2-6V7h-2v2h2Zm0 8v-2h-2v2h2ZM10 7V5H8v2h2Zm0 12v-2H8v2h2Z"/></svg></button>
+              </div>
+            </div>
+            <div class="game-picker" role="group" aria-label="Bibliothèque des jeux : clic et glisse pour parcourir">
+              <button class="game-choice is-active" type="button" data-game-choice aria-controls="gameDetail" aria-pressed="true" aria-label="01 sur 05 — Lethal Room" data-number="01 / 05" data-title="Lethal Room" data-rating="4,9/5 (+900 avis)" data-image="img/Basic/Banner/Banner-Lethal-room.webp" data-category="SURVIE / MOBILE" data-platforms="apple,android" data-accent="#62FF78" data-description="DAX transforme chaque pièce en piège mortel. Repère le danger, esquive au bon moment et tente de grimper au classement." data-link="https://play.google.com/store/apps/details?id=com.baudo.lethalroom" data-ios="https://apps.apple.com/fr/app/lethal-room/id6740019326" data-android="https://play.google.com/store/apps/details?id=com.baudo.lethalroom" data-video="https://www.youtube.com/watch?v=gsCayKGH3ps" data-action="Telecharger le jeu">
+                <img src="img/Basic/Banner/Banner-Lethal-room.webp" alt="" width="420" height="260"><span class="game-choice-number">01</span><span class="game-choice-title">Lethal Room</span><span class="game-choice-arrow click-icon" aria-hidden="true"><svg class="icon-click-base" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-click"></use></svg></span>
+              </button>
+              <button class="game-choice" type="button" data-game-choice aria-controls="gameDetail" aria-pressed="false" aria-label="02 sur 05 — Infinite Climb" data-number="02 / 05" data-title="Infinite Climb" data-rating="4,7/5 (+340 avis)" data-image="img/Basic/Banner/Banner-Infinite-Climb.webp" data-category="ASCENSION / MOBILE" data-platforms="apple,android" data-accent="#9D83FF" data-description="Saute de plateforme en plateforme, déjoue les pièges et trouve la bonne route jusqu’au sommet. Plusieurs modes et défis quotidiens renouvellent l’ascension." data-link="https://play.google.com/store/apps/details?id=com.InfiniteClimb.monoapplication" data-ios="https://apps.apple.com/fr/app/infinite-climb/id6478911448" data-android="https://play.google.com/store/apps/details?id=com.InfiniteClimb.monoapplication" data-video="https://www.youtube.com/watch?v=t37jJCJjQHU&amp;t" data-action="Telecharger le jeu">
+                <img src="img/Basic/Banner/Banner-Infinite-Climb.webp" alt="" width="420" height="260"><span class="game-choice-number">02</span><span class="game-choice-title">Infinite Climb</span><span class="game-choice-arrow click-icon" aria-hidden="true"><svg class="icon-click-base" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-click"></use></svg></span>
+              </button>
+              <button class="game-choice" type="button" data-game-choice aria-controls="gameDetail" aria-pressed="false" aria-label="03 sur 05 — Boom Bouga" data-number="03 / 05" data-title="Boom Bouga" data-image="img/Basic/Banner/Banner-Boom-Bouga.webp" data-category="FPS / PRÉHISTOIRE" data-platforms="windows,mac" data-accent="#D9AD7D" data-description="Un FPS préhistorique où ça canarde sec : pars chasser le mammouth dans une aventure aussi absurde qu’explosive." data-link="https://dev-baudo.itch.io/boom-bouga" data-video="https://www.youtube.com/watch?v=aD-n9VG6C_o&amp;t" data-action="Telecharger sur itch.io">
+                <img src="img/Basic/Banner/Banner-Boom-Bouga.webp" alt="" width="420" height="260"><span class="game-choice-number">03</span><span class="game-choice-title">Boom Bouga</span><span class="game-choice-arrow click-icon" aria-hidden="true"><svg class="icon-click-base" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-click"></use></svg></span>
+              </button>
+              <button class="game-choice" type="button" data-game-choice aria-controls="gameDetail" aria-pressed="false" aria-label="04 sur 05 — Waffle Games" data-number="04 / 05" data-title="Waffle Games" data-image="img/Basic/Banner/Banner-Waffle-Game.webp" data-category="ACTION / ÉPREUVES" data-platforms="windows" data-accent="#57F5FF" data-description="Trois épreuves mortelles orchestrées par Waffle et son assistant DAX. Réflexes, logique et sang-froid : chaque manche peut être la dernière." data-link="https://dev-baudo.itch.io/waffle-games-a-lethal-room-experience" data-video="https://www.youtube.com/watch?v=UcuzdEtE9QE&amp;t" data-action="Decouvrir sur itch.io">
+                <img src="img/Basic/Banner/Banner-Waffle-Game.webp" alt="" width="420" height="260"><span class="game-choice-number">04</span><span class="game-choice-title">Waffle Games</span><span class="game-choice-arrow click-icon" aria-hidden="true"><svg class="icon-click-base" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-click"></use></svg></span>
+              </button>
+              <button class="game-choice" type="button" data-game-choice aria-controls="gameDetail" aria-pressed="false" aria-label="05 sur 05 — Bouga - The dark Age" data-number="05 / 05" data-title="Bouga - The dark Age" data-image="img/Basic/Banner/Banner-The-Dark-Age.webp" data-category="PROJET INDÉPENDANT" data-platforms="windows" data-accent="#F3A72B" data-description="Un projet indépendant présenté en vitrine. Ouvre sa page itch.io pour retrouver les détails et son état d’avancement." data-link="https://dev-baudo.itch.io/bouga-the-dark-age" data-video="https://www.youtube.com/watch?v=QyFbsVqfdQM" data-action="Voir sur itch.io">
+                <img src="img/Basic/Banner/Banner-The-Dark-Age.webp" alt="" width="420" height="260"><span class="game-choice-number">05</span><span class="game-choice-title">Bouga - The dark Age</span><span class="game-choice-arrow click-icon" aria-hidden="true"><svg class="icon-click-base" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-click"></use></svg></span>
+              </button>
+            </div>
+          </div>
+        </div>      </div>
+    </section>
+
+    <section id="contact" class="section contact-section alt" aria-labelledby="contact-title">
+      <div class="wrap contact-layout">
+        <div class="section-heading">
+          <p class="eyebrow">05 / CONTACT</p>
+          <h2 class="title" id="contact-title">Me contacter</h2>
+          <p class="section-intro">Cette adresse est réservée exclusivement aux demandes des marques et aux partenariats sérieux. Pour les autres messages, écris à l’adresse ci-dessous.</p>
+        </div>
+
+        <div class="contact-list">
+          <a class="contact-row" href="mailto:devBaudoPro@outlook.com">
+            <span><small>UNIQUEMENT PARTENARIATS &amp; MARQUES</small><strong>devBaudoPro@outlook.com</strong></span>
+            <b class="click-icon" aria-hidden="true"><svg class="icon-click-base" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-click"></use></svg></b>
+          </a>
+          <a class="contact-row" href="mailto:devBaudoPro@outlook.com">
+            <span><small>COMMUNAUTE &amp; MESSAGES</small><strong>devBaudoPro@outlook.com</strong></span>
+            <b class="click-icon" aria-hidden="true"><svg class="icon-click-base" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-click"></use></svg></b>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot">
+        <p>© 2026 Baudo Prod. Tous droits réservés.</p>
+        <p>Site créé par <a href="https://cscpacman.fr/" target="_blank" rel="noopener noreferrer">csc.pacman</a></p>
+      </div>
+      <nav class="footer-legal-nav" aria-label="Informations juridiques">
+        <span>INFOS</span>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Confidentialité</a>
+      </nav>
+    </div>
+  </footer>
+
+  <dialog class="store-modal" id="storeModal" aria-labelledby="storeModalTitle">
+    <div class="store-modal-card">
+      <div class="store-modal-heading">
+        <p class="eyebrow">CHOISIS TA PLATEFORME</p>
+        <button class="store-modal-close" id="storeModalClose" type="button" aria-label="Fermer">×</button>
+      </div>
+      <h2 id="storeModalTitle">Telecharger le jeu</h2>
+      <div class="store-options">
+        <a class="store-option" id="appStoreLink" href="https://apps.apple.com/fr/app/lethal-room/id6740019326" target="_blank" rel="noopener noreferrer">
+          <span class="store-option-icon" id="appStoreIcon" aria-hidden="true"></span>
+          <span class="store-option-copy"><strong>App Store</strong><small>iPhone et iPad</small></span>
+          <span class="store-option-arrow" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><use href="#icon-click"></use></svg></span>
+        </a>
+        <a class="store-option" id="googlePlayLink" href="https://play.google.com/store/apps/details?id=com.baudo.lethalroom" target="_blank" rel="noopener noreferrer">
+          <span class="store-option-icon" id="googlePlayIcon" aria-hidden="true"></span>
+          <span class="store-option-copy"><strong>Google Play</strong><small>Android</small></span>
+          <span class="store-option-arrow" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><use href="#icon-click"></use></svg></span>
+        </a>
+      </div>
+    </div>
+  </dialog>
+  <script src="Front-end/script.js"></script>
+  <script src="Front-end/hero-scroll.js" defer></script>
+  <script src="Front-end/channel-views.js" defer></script>
+  <script src="Front-end/latest-video.js" defer></script>
+  <script src="Front-end/dev-play-3d.js" defer></script>
+</body>
+</html>
