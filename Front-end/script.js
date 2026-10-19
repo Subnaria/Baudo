@@ -250,7 +250,7 @@
       const res = await fetch("https://baudo.fr/api/subscribers", { cache: "no-store" });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
-      const count = Number(data.subscriberCount ?? 81500);
+      const count = Number(data.subscriberCount ?? 89200);
       if (!Number.isFinite(count) || count < 0) {
         throw new Error("Réponse API abonnés invalide");
       }
